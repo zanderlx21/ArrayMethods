@@ -68,11 +68,38 @@ return item.price + currentTotal;
 // * returns true or false *
 const IncludesTwo = nums.includes(2);
 
+
+
+function IsPalindrome(str) {
+    var length = str.length / 2;
+
+    for (let i = 0; i < length; i++){
+      if (str[i] !== str[str.length - i - 1]){
+          return false;
+        }
+    }
+    return true;
+  }
+
+  let word = "racecar"
+  let desc;
+  let results = IsPalindrome(word);
+  
+  if (results == true){
+      desc = "is a pallindrome!"
+  } else {
+      desc = "is not a pallindrome... :/"
+  }
+
+
+
 console.log(items);
 console.log(filteredItems);
 console.log(itemNames);
 console.log(findItem);
 console.log(hasCheapStuff);
-console.log(everythingIsCheap)
-console.log(`$${total} and it's all yours!`)
-console.log(IncludesTwo)
+console.log(everythingIsCheap);
+console.log(`$${total} and it's all yours!`);
+console.log(IncludesTwo);
+console.log(`It's ${results}! "${word}" ${desc}`)
+

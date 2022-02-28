@@ -81,9 +81,9 @@ function IsPalindrome(str) {
     return true;
   }
 
-  let word = "racecar"
+  let word = "Racecar"
   let desc;
-  let results = IsPalindrome(word);
+  let results = IsPalindrome(word.toLowerCase);
   
   if (results == true){
       desc = "is a pallindrome!"
